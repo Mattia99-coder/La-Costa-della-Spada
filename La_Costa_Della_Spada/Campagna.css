@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+/* ==========================================
+   Campagna D&D - Stylesheet
+   Data: 04/01/2026
+   ========================================== */
+
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    padding: 2vh 2.5vw;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 300;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Stili generali */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 40vh;
+    padding-left: 2.5vw;
+    padding-bottom: 5vh;
+    color: #000;
+}
+
+.campagna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campagna-title {
+    padding-top: 2vh;
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 95vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+}
+
+.book-title {
+    margin-top: 2vh;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 1vh 2vw;
+}
+
+.chapters {
+    padding-top: 1vh;
+    padding-left: 2vh;
+    padding-bottom: 1vh;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    border-radius: 0 0 20px 20px;
+}
+
+.book-title {
+    cursor: pointer;
+}
+
+.book-title:hover {
+    background-color: #e0e0e0;
+}
+
+.book.open {
+    width: 95vw;
+    margin-right: 5vw;
+    scrollbar-width: none;
+}
+
+.book.open .book-title {
+    background-color: #f0f0f0;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+}
+
+.book.open .chapters {
+    display: block;
+    border-top: none;    
+}
+
+.chapter-content {
+    margin-top: 1vh;
+    margin-right: 1vw;
+    display: none;
+    text-align: justify;
+    margin-bottom: 2vh;
+}
+
+.chapter-content.open {
+    display: block;
+}
+
+.chapter-title {
+    cursor: pointer;
+    margin-right: 2vh;
+    border-bottom: #000 1px solid;
+}
+
+.chapter-title:last-of-type {
+    border-bottom: none;
+}
+
+.chapter-content.open + .chapter-title {
+    border-top: #000 1px solid;
+}
+
+.chapter-title:hover {
+    background-color: #e0e0e0;    
+}
+
+.chapter-title.open .chapter-content {
+    display: block;
+}
+
+.giocatori {
+    margin-right: 2vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.giocatore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 10% 10%;
+}
+
+.scheda {
+    display: none;
+}
+
+/* Overlay per schermo intero */
+.scheda-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1150;
+    justify-content: center;
+    align-items: center;
+}
+
+.scheda-overlay.active {
+    display: flex;
+}
+
+.scheda-fullscreen {
+    width: auto;
+    background-color: white;
+    border: #000 3px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    z-index: 1000;
+    overflow: hidden;
+    position: relative;
+}
+
+.scheda-fullscreen .immagine-scheda {
+    height: 90vh;
+    width: 100%;
+    max-width: 100%; 
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.scheda-fullscreen .immagine-scheda-1 {
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    max-width: 100%; 
+    object-fit: contain;
+    border-radius: 15px;
+    z-index: 1002;
+    right: 35%;
+    top: 37%
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1100;
+}
+
+.close-button:hover {
+    color: #666;
+}
+
+/* Menu laterale */
+.menu-icon {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    border-radius: 50% 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, right 0.4s ease;
+}
+
+.menu-icon.menu-open {
+    right: 400px;
+}
+
+.menu-icon:hover {
+    background-color: #555;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+    transition: right 0.4s ease;
+    overflow-y: auto;
+    border-left: 3px solid #333;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+.side-menu.dimmed::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.side-menu-content {
+    padding: 20px;
+}
+
+.side-menu-content h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #f5f5f5;
+    border-color: #333;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.scheda-menu {
+    display: none;
+}
+
+.descrizione-scheda {
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.descrizione-scheda h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.descrizione-scheda p {
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}

@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Costa della Spada</title>
+        <link rel="stylesheet" href="Campagna.css">
+    </head>
+    <body> 
+        <header>
+            <div class="giocatori">
+            <div class="giocatore">
+                <img src="../Immagini/Lyrea.png" alt="Lyrea">
+                <h3>Lyr&euml;a</h3>
+                <p><b>Razza:</b> Mezz'elfa</p>
+                <p><b>Classe:</b> Ladra</p>
+                <p><b>Giocatore:</b> Lucrezia</p>
+                <div class="scheda">
+                    <img class="immagine-scheda" src="../Immagini/Lyrea.png" alt="Lyrea Scheda">
+                    <img class="immagine-scheda-1" src="../Immagini/Astra+Tomolinus.png" alt="Astra+Tomolinus.png">
+                </div>
+            </div>
+            <div class="giocatore">
+                <img src="../Immagini/Barakas.jpg" alt="Barakas">
+                <h3>Barakas</h3>
+                <p><b>Razza:</b> Tiefling</p>
+                <p><b>Classe:</b> Bardo</p>
+                <p><b>Giocatore:</b> Gabriele</p>
+                <div class="scheda">
+                    <img class="immagine-scheda" src="../Immagini/Barakas.jpg" alt="Barakas Scheda">
+                </div>
+            </div>
+            <div class="giocatore">
+                <img src="../Immagini/Igor.jpg" alt="Igor">
+                <h3>Igor</h3>
+                <p><b>Razza:</b> Umano</p>
+                <p><b>Classe:</b> Barbaro</p>
+                <p><b>Giocatore:</b> Ermanno</p>
+                <div class="scheda">
+                    <img class="immagine-scheda" src="../Immagini/Igor.jpg" alt="Igor Scheda">
+                </div>
+            </div>
+            <div class="giocatore">
+                <img src="../Immagini/Lucien.png" alt="Lucien">
+                <h3>Lucien</h3>
+                <p><b>Razza:</b> Elfo</p>
+                <p><b>Classe:</b> Stregone</p>
+                <p><b>Giocatore:</b> Armando</p>
+                <div class="scheda">
+                    <img class="immagine-scheda" src="../Immagini/Lucien.png" alt="Lucien Scheda">
+                    <img class="immagine-scheda-1" src="../Immagini/Mastino.png" alt="Mastino Scheda">
+                </div>
+            </div>
+            <div class="giocatore">
+                <img src="../Immagini/Trogo.png" alt="Trogo">
+                <h3>Trogo</h3>
+                <p><b>Razza:</b> Tortuga</p> 
+                <p><b>Classe:</b> Druido</p>
+                <p><b>Giocatore:</b> Andrea</p>
+                <div class="scheda">
+                    <img class="immagine-scheda" src="../Immagini/Trogo.png" alt="Trogo Scheda">
+                </div>
+            </div>
+            <div class="giocatore">
+                <img src="../Immagini/Azrael.jpg" alt="Azrael">
+                <h3>Azrael</h3>
+                <p><b>Razza:</b> Elfo</p>
+                <p><b>Classe:</b> Paladino</p>
+                <p><b>Giocatore:</b> Ludovico</p>
+                <div class="scheda">
+                    <img class="immagine-scheda" src="../Immagini/Azrael.jpg" alt="Azrael Scheda">
+                </div>
+            </div>
+        </div>
+        </header>
+        
+        <!-- Icona menu laterale -->
+        <div class="menu-icon" id="menuIcon">
+            <span>☰</span>
+        </div>
+        
+        <!-- Menu laterale -->
+        <div class="side-menu" id="sideMenu">
+            <div class="side-menu-content">
+                <h2>Menu</h2>
+                <div class="menu-item" data-item="1">
+                    <img src="../Immagini/mappa.webp" alt="La Costa della Spada">
+                    <p>La Costa della Spada</p>
+                    <div class="scheda-menu">
+                        <img class="immagine-scheda" src="../Immagini/mappa.webp" alt="La Costa della Spada Scheda">
+                    </div>
+                </div>
+                <div class="menu-item" data-item="2">
+                    <img src="../Immagini/Brottor.png" alt="Brottor">
+                    <p>Brottor</p>
+                    <div class="scheda-menu">
+                        <img class="immagine-scheda" src="../Immagini/Brottor.png" alt="Brottor Scheda">
+                        <div class="descrizione-scheda">
+                            <h2>Brottor</h2>
+                            <p>Descrizione di Brottor. Inserisci qui tutte le informazioni relative a questo elemento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-item="3">
+                    <img src="../Immagini/Bartolomiao.png" alt="Bartolomiao">
+                    <p>Bartolomiao</p>
+                    <div class="scheda-menu">
+                        <img class="immagine-scheda" src="../Immagini/Bartolomiao.png" alt="Bartolomiao Scheda">
+                        <div class="descrizione-scheda">
+                            <h2>Bartolomiao</h2>
+                            <p>Descrizione di Bartolomiao. Inserisci qui tutte le informazioni relative a questo elemento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-item="4">
+                    <img src="../Immagini/Drago_Bianco.png" alt="Drago Bianco">
+                    <p>Drago Bianco</p>
+                    <div class="scheda-menu">
+                        <img class="immagine-scheda" src="../Immagini/Drago_Bianco.png" alt="Drago Bianco Scheda">
+                        <div class="descrizione-scheda">
+                            <h2>Drago Bianco</h2>
+                            <p>Descrizione del Drago Bianco. Inserisci qui tutte le informazioni relative a questo elemento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="campagna">
+            <div class="campagna-title">
+                <h1>La Costa della Spada</h1>
+            </div>
+            <div class="book">
+                <div class="book-title">
+                    <h2>0. La scaglia del drago</h2>
+                </div>
+                <div class="chapters">
+                    <div class="chapter-title">
+                        <h3>Capitolo I: L&rsquo;inizio di un&rsquo;avventura</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>
+                        Toril, anno 1500 del Calendario di Valle. Il sole di Flamerule stava cedendo il passo ai giorni dorati di Eleasias, e l’aria
+                        portava con sé l’eccitazione delle festività imminenti: Mezzestate era alle porte, seguita a breve da Scudiuniti, una ricorrenza
+                        che si concedeva al mondo solo negli anni bisestili. Le strade ribollivano di attesa, promesse e monete tintinnanti.
+                        </p>
+
+                        <p>
+                        A dominare questo fermento si ergeva Waterdeep, la Città degli Splendori, chiamata anche la Corona del Nord. Le sue torri
+                        scintillavano sopra le acque profonde della baia, salendo con orgoglio fino alle pendici della grande montagna che vegliava
+                        sul Mare delle Spade. In tutta Faerûn non esisteva luogo che incarnasse meglio ricchezza, potere e stabilità: una metropoli
+                        antica, solida, eppure mai immobile.
+                        </p>
+
+                        <p>
+                        Tra le sue mura, i cittadini lavoravano senza sosta, i nobili sfoggiavano titoli e vesti come armi, e i Grandi Lord Mascherati
+                        si muovevano nell’ombra, intrecciando intrighi e accumulando fortune. Nei mercati di Waterdeep si poteva trovare qualsiasi cosa:
+                        spezie esotiche, reliquie dimenticate, lame forgiate in terre lontane. Per chi aveva abbastanza oro e pazienza, nulla era davvero
+                        irraggiungibile. Gli avventurieri meno fortunati, ma più audaci, trovavano invece lavoro con facilità: come scorte per carovane,
+                        guardie del corpo per nobili inquieti o esploratori di rovine perdute nel Nord selvaggio.
+                        </p>
+
+                        <p>
+                        Sebbene Waterdeep fosse rimasta in piedi per secoli, solo ora stava tornando ai fasti di duecento anni prima, come un gigante
+                        che si risvegliava lentamente dal torpore.
+                        </p>
+
+                        <p>
+                        È in questo scenario che la nostra storia prende forma, in una locanda del Quartiere del Porto: la Locanda della Balena
+                        Spiaggiata. Il quartiere non godeva di buona reputazione. Marinai rozzi scaricavano merci dalle navi urlando ordini incomprensibili,
+                        mercanti di pesce si facevano largo tra la folla con voci stridule, e figure losche si aggiravano come squali in attesa di una
+                        preda distratta.
+                        </p>
+
+                        <p>
+                        La Balena Spiaggiata rifletteva perfettamente il carattere del quartiere: semplice, rumorosa e viva. Il bancone di legno grezzo,
+                        visibile non appena si apriva la porta, dava su una sala per metà vuota ma tutt’altro che silenziosa. Dietro di esso, un oste
+                        mezz’orco lucidava bicchieri con aria annoiata, servendo bevande senza fare domande. Nella sala si mescolavano personaggi di ogni
+                        tipo: umani ancora stesi sui tavoli esattamente dove erano crollati la notte prima e nani che festeggiavano rumorosamente,
+                        brindando agli imminenti guadagni che le feste avrebbero portato.
+                        </p>
+
+                        <p>
+                        In mezzo a questo pittoresco caos, sei figure spiccavano come note stonate in una melodia ben conosciuta. In un angolo buio,
+                        due sagome incappucciate discutevano a bassa voce. Poco distante, una figura femminile, forse una mezz’elfa, osservava la sala
+                        con attenzione calcolata. Più al centro, un umano possente divorava un piatto di cinghiale come se fosse l’ultimo pasto della
+                        sua vita. Un tiefling, con corna e pelle colorata che avrebbero potuto attirare sguardi diffidenti, si era invece perfettamente
+                        integrato, suonando il violino e riempiendo l’aria di musica. Infine, vicino alla porta socchiusa, stava un tortuga dal guscio
+                        robusto, apparentemente immune al caldo afoso che faceva sudare chiunque altro.
+                        </p>
+
+                        <p>
+                        Per un po’, i sei rimasero tranquilli, ciascuno immerso nei propri pensieri. Ma la calma si spezzò quando due di loro iniziarono
+                        a discutere animatamente davanti a una bacheca, litigando per un certo Torneo della Banda dei Quattro Fratelli. La curiosità,
+                        come una scintilla, si propagò rapidamente.
+                        </p>
+
+                        <p>
+                        Quasi nello stesso istante, tutti e sei si avvicinarono alla bacheca, osservando i manifesti ingialliti appesi al legno. Tre in
+                        particolare catturarono la loro attenzione: uno annunciava il Torneo della Banda dei Quattro Fratelli; un altro, più inquietante,
+                        descriveva un ricercato senza volto né nome, indicato solo come “Soprannome: Il Re dei Ladri”; il terzo era un’offerta di lavoro
+                        firmata da un mercante nano, Brottor Dankil, che cercava un gruppo per una spedizione. Ricompensa: cento monete d’oro a testa.
+                        </p>
+
+                        <p>
+                        Ognuno fu attratto da un manifesto diverso. La mezz’elfa non riusciva a staccare gli occhi dal Re dei Ladri. I due fratelli
+                        tornarono a fissare il Torneo, un annuncio logorato dal tempo ma ancora carico di promesse. Gli altri, più pragmatici, valutarono
+                        l’offerta di Brottor con interesse crescente.
+                        </p>
+
+                        <p>
+                        Tra insulti, minacce di morte e parole grosse, i sei decisero infine di mettere da parte le divergenze e di incontrare il
+                        mercante. Lasciarono la locanda e si diressero verso il Quartiere del Castello, ignari del fatto che quella decisione avrebbe
+                        cambiato le loro vite.
+                        </p>
+
+                        <p>
+                        Nella piazza centrale li attendeva Brottor Dankil: un nano eccentrico, con occhi brillanti e un’energia che molti avrebbero
+                        scambiato per follia. Il suo incarico era semplice solo in apparenza. Dovevano scortarlo fino al Dorso del Mondo, al confine con
+                        Icewind Dale, dove si diceva che tra i ghiacci giacesse un drago bianco, dormiente… o forse morto.
+                        </p>
+
+                        <p>
+                        Brottor spiegò che il suo obiettivo era rubare una scaglia del drago e tornare indietro per creare un <i>mythal</i>, un potente
+                        manufatto magico destinato a proteggere o aiutare le città che ne possedevano uno. Quando gli avventurieri compresero la reale
+                        pericolosità dell’impresa, la trattativa sulla ricompensa si fece accesa. Alla fine, però, l’oro e il richiamo dell’avventura
+                        ebbero la meglio.
+                        </p>
+
+                        <p>
+                        Così, tra dubbi e ambizioni, i sei accettarono l’incarico. Il loro viaggio ebbe inizio quel giorno, sotto il cielo di Waterdeep,
+                        ignari che quella fosse solo la prima pagina di una storia destinata a essere ricordata.
+                        </p>
+                    </div>
+                    <div class="chapter-title">
+                        <h3>Capitolo II: Nuove ferite, vecchi amici</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>
+                        Lasciata alle spalle Waterdeep, gli avventurieri si misero in marcia verso nord, seguendo la lunga strada che conduceva al Dorso
+                        del Mondo. Il fragore della Città degli Splendori svanì lentamente, sostituito dal rumore dei passi sul sentiero e dallo
+                        scricchiolio del carro di Brottor. Fu proprio il nano, durante il cammino, a spiegare il percorso che avrebbero seguito:
+                        attraversare Roccaspina, costeggiare il Mare dei Morti e giungere a Neverwinter, dove avrebbe consegnato alcune merci in vista
+                        della festa di Scudiuniti. Lì si sarebbero fermati per la notte, per poi ripartire il giorno seguente.
+                        </p>
+
+                        <p>
+                        Prima di raggiungere Roccaspina, tuttavia, la compagnia decise di deviare leggermente dal percorso principale per fermarsi in un
+                        avamposto della Banda dei Quattro Fratelli. Non era troppo fuori mano, e per alcuni di loro quella sosta rappresentava molto più
+                        di una semplice pausa.
+                        </p>
+
+                        <p>
+                        All’interno dell’avamposto, tra muri consumati e simboli ormai sbiaditi, ricevettero il primo indizio per rintracciare il primo
+                        dei fratelli. Le parole, incise o forse scritte in fretta, suonavano come un enigma:
+                        </p>
+
+                        <p>
+                        “Dkoi wykstico,<br>
+                        thhvegam mk munbrxv fxpc,<br>
+                        vtoe sks dnfea”
+                        </p>
+
+                        <p>
+                        Con il mistero ancora fresco nella mente, il gruppo riprese il viaggio verso Roccaspina. Superata la cittadina e raggiunte le
+                        coste del Mare dei Morti, il paesaggio cambiò drasticamente. Il lago costiero, salato e cupo, si stendeva a ridosso del Mare
+                        della Costa della Spada. La vegetazione lungo le rive appariva marcia, come se la vita stessa stesse lentamente abbandonando
+                        quel luogo.
+                        </p>
+
+                        <p>
+                        Un rumore improvviso proveniente dall’acqua attirò l’attenzione degli avventurieri. Tra le onde si intravide una pinna che
+                        tagliava la superficie con movimenti lenti ma decisi. Decisero di avvicinarsi con cautela, osservando sia la vegetazione sia il
+                        mare. Il primo a muoversi fu Trogo, che avanzò verso il bagnasciuga nel tentativo di capire se in quelle acque vi fosse ancora
+                        vita… e se fosse ostile.
+                        </p>
+
+                        <p>
+                        Proprio mentre Trogo si allontanava, Lucien lanciò un sasso nella stessa direzione, forse per provocare una reazione. La risposta
+                        non tardò ad arrivare: una freccia emerse dall’acqua come un lampo, colpendolo in piena spalla e facendolo indietreggiare con un
+                        grido di dolore. In un istante, sei Sauhagin balzarono fuori dal mare, creature marine umanoidi dai colli lunghi come anguille,
+                        ma grandi quanto uomini, armate e pronte a uccidere.
+                        </p>
+
+                        <p>
+                        Il combattimento fu feroce e immediato. Gli avventurieri si trovarono presto in difficoltà, soprattutto Lucien e Igor, già
+                        provati dall’attacco iniziale. Vedendo il gruppo vacillare, Brottor non esitò: estrasse da sotto il carro il suo pesante
+                        martello di pietra e si gettò nella mischia al loro fianco.
+                        </p>
+
+                        <p>
+                        Con l’aiuto del nano e dopo aver subito ferite gravi, uno dopo l’altro i Sauhagin caddero, lasciando le acque del Mare dei Morti
+                        di nuovo silenziose. Solo allora il gruppo poté fermarsi a respirare.
+                        </p>
+
+                        <p>
+                        Tra i cadaveri, Igor trovò una pergamena strappata, come se fosse stata strappata con violenza da un libro più grande. Il testo
+                        raccontava una leggenda antica, incentrata su un elfo della luna di nome Akmenos, descritto come uno stregone di potenza
+                        straordinaria, come non ce n’erano mai stati e come non ce ne sarebbero mai stati.
+                        </p>
+
+                        <p>
+                        Riposta la pergamena, i sette ripresero il cammino verso Neverwinter. Vi giunsero al calare della sera, in silenzio, stanchi ma
+                        ancora vigili. Dopo aver consegnato alcune merci in uno dei suoi negozi, Brottor guidò la compagnia verso un edificio elegante
+                        nella sua semplicità.
+                        </p>
+
+                        <p>
+                        Il carro fu lasciato nel cortile laterale. Il nano bussò al grande portone che, aprendosi, rivelò una casa ordinata e
+                        accogliente, immersa in una penombra tranquilla. Alte librerie si innalzavano lungo le pareti come torri di sapere, mentre al
+                        centro della sala un grande tavolo, ingombro di scartoffie, rompeva l’ordine con il suo caos. Due scalinate si dividevano
+                        salendo verso il piano superiore, da cui apparve una figura avvolta in una tunica blu notte, incappucciata e silenziosa.
+                        </p>
+
+                        <p>
+                        La figura scese le scale e accolse Brottor con un abbraccio sincero. Poi abbassò il cappuccio, rivelando il suo volto: un Tabaxi
+                        dal pelo nero e dagli occhi azzurri che, nella luce soffusa, sembravano quasi brillare di luce propria, o forse riflettevano
+                        solo il chiarore della luna.
+                        </p>
+
+                        <p>
+                        Si presentò come Bartolomiao, un mago. Senza perdere tempo, condusse il gruppo nella sala da pranzo e, dopo essere sparito per
+                        qualche minuto in cucina, tornò con cibo caldo per tutti. Il pasto fu accolto con gratitudine, soprattutto da Brottor, che
+                        mangiò con la solennità di un rituale.
+                        </p>
+
+                        <p>
+                        Terminata la cena, il nano iniziò a raccontare nel dettaglio il viaggio che intendeva intraprendere e il vero motivo della
+                        spedizione. Gli avventurieri ascoltarono in silenzio, finché il mago non chiese anche la loro opinione. Le risposte furono
+                        varie, ma tutte sincere.
+                        </p>
+
+                        <p>
+                        Dopo averli ascoltati, Bartolomiao si alzò e, insieme a Brottor, si ritirò in quello che sembrava uno studio. La stanza era
+                        protetta da magie che rendevano impossibile origliare, nonostante i tentativi del gruppo. Lyriëa, invece, salì al piano
+                        superiore, entrando in quella che era la più grande biblioteca che avesse mai visto.
+                        </p>
+
+                        <p>
+                        La mezz’elfa cercò tre libri precisi: uno sulla fabbricazione delle armi, uno sulla stirpe elfica e uno sui draghi. Non trovando
+                        i primi due, concentrò le sue ricerche sul terzo. Alla fine si imbatté in un volume che raccoglieva leggende e miti draconici.
+                        </p>
+
+                        <p>
+                        Tra le pagine, due storie catturarono la sua attenzione. La prima narrava di un drago di bronzo che aveva donato una propria
+                        scaglia a una città, come simbolo di pace tra i draghi metallici e le stirpi degli umanoidi. La seconda parlava di un drago
+                        bianco che, gravemente ferito, si era rifugiato nel luogo dove oggi sorge il Dorso del Mondo e il Regno di Molte Frecce, cinquecento
+                        anni prima.
+                        </p>
+
+                        <p>
+                        La leggenda raccontava anche che, prima della venuta del drago, Icewind Dale non fosse la distesa di ghiaccio conosciuta oggi.
+                        Il gelo eterno sarebbe giunto solo in seguito, come un’ombra lasciata dal passaggio della creatura.
+                        </p>
+                    </div>
+                    <div class="chapter-title">
+                        <h3>Capitolo III: Verit&agrave; nascoste</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>
+                        Dopo una lunga e animata discussione, il nano e il tabaxi uscirono finalmente dallo studio del mago, ponendo fine ai sussurri e
+                        alle congetture. Il silenzio che si era creato nella casa venne spezzato quasi subito: Igor non perse tempo e chiese spiegazioni
+                        riguardo alla pergamena trovata addosso a uno degli uomini-pesce che li avevano assaliti sulle rive del Mare dei Morti.
+                        </p>
+
+                        <p>
+                        Bartolomiao spiegò che quella pergamena era una pagina strappata da un antico libro che narrava la leggenda di Akmenos. Akmenos,
+                        come già accennato, era stato uno stregone di potenza inimmaginabile, appartenente alla stirpe degli elfi della luna. Il suo
+                        sogno era quello di creare un mondo privo di guerre e disordini, ma la pace che immaginava poteva esistere solo attraverso il
+                        dominio assoluto: tutti avrebbero dovuto piegarsi alla sua volontà.
+                        </p>
+
+                        <p>
+                        Molti tentarono di ucciderlo per porre fine alla sua tirannia e alla sua visione distorta dell’ordine, ma ogni tentativo fallì.
+                        Alla fine, un gruppo di eroi comprese che Akmenos non poteva essere ucciso. Così lo esiliarono in un altro piano di esistenza,
+                        accessibile soltanto attraverso uno specchio creato appositamente. La speranza era che, un giorno, uno stregone o un mago ancora
+                        più potente potesse trovare il modo di distruggerlo definitivamente.
+                        </p>
+
+                        <p>
+                        Col passare del tempo, però, la leggenda, il libro e persino lo specchio di Akmenos andarono perduti, scivolando nell’oblio e
+                        venendo infine dimenticati.
+                        </p>
+
+                        <p>
+                        Il mago rivelò poi al gruppo le vere intenzioni di Brottor nella creazione del <i>mythal</i>. Il nano non desiderava soltanto
+                        ammorbidire il clima di Waterdeep, creando una sorta di bolla protettiva contro il caldo soffocante, ma intendeva anche
+                        proteggere la città dai tiefling. La scaglia del drago avrebbe dovuto fungere da barriera contro una possibile minaccia:
+                        estremisti del culto di Asmodeus, il dio del Nono Infero, il più potente tra gli arcidiavoli.
+                        </p>
+
+                        <p>
+                        Asmodeus si era manifestato apertamente per la prima volta due secoli prima, durante i tempi della Piaga Magica. Con la morte
+                        della dea della magia e lo squarcio nella Trama, il mondo era precipitato nel caos. Asmodeus colse quell’occasione per
+                        presentarsi come soluzione al disordine, approfittando del silenzio degli altri dei nei confronti dei mortali. Con inganni e
+                        false promesse proclamò i “Figli di Asmodeus”: tiefling che portavano i segni del loro progenitore nell’aspetto e in alcuni
+                        poteri.
+                        </p>
+
+                        <p>
+                        Questo portò a un odio diffuso verso i tiefling da parte delle altre razze e alla nascita del culto di Asmodeus, che, pur non
+                        essendo illegale, continuava a crescere nell’ombra.
+                        </p>
+
+                        <p>
+                        Poiché era impossibile rendere il potere del <i>mythal</i> selettivo, limitandolo solo ai seguaci del culto di Asmodeus, il
+                        tabaxi si offrì — o forse si impose — come intermediario tra l’Alleanza dei Lord e Brottor. Nonostante le affermazioni del nano,
+                        egli non aveva mai realmente informato l’Alleanza delle sue reali intenzioni. Deciso il da farsi per il giorno seguente e
+                        completati gli ultimi preparativi, la compagnia si ritirò infine nelle proprie stanze.
+                        </p>
+
+                        <p>
+                        Il mattino dopo, prima ancora che il sole sorgesse, furono i fratelli elfi a svegliarsi per primi. Dopo essersi preparati,
+                        iniziarono a cercare informazioni sulla minaccia che li attendeva: il leggendario drago bianco. Quando ebbero trovato ciò che
+                        cercavano, gli altri cominciarono a unirsi a loro, uno alla volta.
+                        </p>
+
+                        <p>
+                        Trogo fu il primo ad alzarsi dopo di loro, dedicandosi immediatamente alla creazione di pozioni in vista degli scontri futuri.
+                        Poco dopo, quasi insieme, si svegliarono Lyriëa, Igor e Barakas. Tutti trovarono l’equipaggiamento necessario già pronto,
+                        preparato durante la notte da Bartolomiao: abiti pesanti per il freddo del nord e razioni supplementari per il viaggio.
+                        </p>
+
+                        <p>
+                        Con Brottor al loro fianco, il gruppo era pronto a partire. Dopo un breve saluto, gli avventurieri si incamminarono verso il
+                        Dorso del Mondo, mentre Bartolomiao prese la strada opposta, diretto a Waterdeep. Le loro vie si separarono, ma le ombre del
+                        passato e le promesse di ghiaccio li seguivano già nel cuore del Nord.
+                        </p>
+                    </div>
+                    <div class="chapter-title">
+                    <h3>Capitolo IV: La Città in Rovina e i Fili del Destino</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>
+                        Ripreso il viaggio verso nord, la compagnia si diresse a Luskan, la città portuale che si affaccia sul Mare della Costa della
+                        Spada. Ciò che si presentò davanti agli avventurieri fu uno spettacolo ben diverso da quello offerto da Waterdeep o
+                        Neverwinter. Luskan appariva come una città ferita, segnata dal tempo e dall’incuria.
+                        </p>
+
+                        <p>
+                        Un muro di pietra, ormai in rovina ma ancora imponente, circondava l’abitato, riuscendo a garantire una parvenza di protezione
+                        contro attacchi esterni. All’interno, però, la povertà era evidente: case di legno malridotte, strade di terra battuta e
+                        botteghe che vendevano merci di ogni genere, ma di qualità scadente. La compagnia giunse alle porte della città al calar del
+                        sole e decise di fermarsi per la notte, rimandando la partenza verso il Dorso del Mondo alla mattina seguente.
+                        </p>
+
+                        <p>
+                        Approfittando della sosta, i sei si diressero verso la taverna più vicina, la Taverna del Porco Spino, con l’intento di raccogliere
+                        informazioni sul misterioso Re dei Ladri. Ad accoglierli trovarono una locanda spoglia e povera, quasi deserta: tavoli e sedie
+                        inermi nel silenzio, un bancone di legno grezzo e un oste umano intento a pulire i bicchieri con gesti poco rassicuranti.
+                        </p>
+
+                        <p>
+                        Alla prima domanda sul Re dei Ladri, l’oste li scrutò con aria sospettosa, poi concesse qualche informazione, seppur vaga. A
+                        Luskan, disse, il Re dei Ladri era una figura ben nota, anche se nessuno l’aveva mai visto. Si diceva che non agisse mai da solo
+                        e che, in ogni colpo da lui messo a segno, non fosse mai stato possibile individuare un filo conduttore o un modus operandi
+                        preciso. L’unica costante era che rubava solo ai ricchi… e solo a quelli che, in un modo o nell’altro, se lo meritavano.
+                        </p>
+
+                        <p>
+                        L’oste li mise inoltre in guardia dal fare troppe domande. A Luskan non mancavano i “fan” del Re dei Ladri, individui pronti a
+                        insospettirsi e a reagire male davanti a un interesse eccessivo.
+                        </p>
+
+                        <p>
+                        Mentre lo scambio di informazioni proseguiva, Barakas venne avvicinato alle spalle da un uomo poco più alto di Igor, che lo
+                        minacciò di morte intimandogli di uscire subito dalla taverna. Barakas, però, si limitò a un semplice gesto della mano e a poche
+                        parole sussurrate. L’uomo cambiò espressione all’istante, placandosi come un cane ben addestrato.
+                        </p>
+
+                        <p>
+                        Una volta fuori dalla taverna, il gruppo decise di non restare in città per la notte, troppo inquieto per dormire tra le mura
+                        di Luskan. Presero invece la direzione del Bosco di Neverwinter. Lungo il cammino, riaprirono l’indizio ricevuto dai seguaci
+                        della Banda dei Quattro Fratelli. Non riuscirono a decifrarne il contenuto, ma compresero che le tre righe erano cifrate nello
+                        stesso modo. Sarebbe bastato risolverne una per comprendere anche le altre.
+                        </p>
+
+                        <p>
+                        Decidendo di rimandare la soluzione dell’enigma, il gruppo raggiunse il limitare del Bosco di Neverwinter e vi allestì
+                        l’accampamento. Raccolsero qualche bacca, accesero il fuoco e si prepararono a trascorrere la notte sotto le fronde oscure degli
+                        alberi.
+                        </p>
+
+                        <p>
+                        Fu durante quella notte che gli avventurieri iniziarono a raccontarsi le proprie storie. Lyriëa parlò dell’infanzia spezzata,
+                        della perdita della madre, della morte del padre e delle punte delle sue orecchie tagliate come marchio di umiliazione. I
+                        fratelli elfi raccontarono di una crescita quasi isolata dal mondo e della scelta, un giorno, di abbandonare la propria casa.
+                        </p>
+
+                        <p>
+                        Trogo parlò della sua infanzia nella natura, vissuta accanto al padre adottivo, un ranger che gli aveva insegnato a conoscere le
+                        leggi del mondo selvaggio. Barakas raccontò della fuga da casa, per non diventare l’ennesimo sacrificio dei suoi genitori a un
+                        dio crudele. Igor, invece, spiegò di aver lasciato la propria dimora per viaggiare e conoscere il mondo in tutta la sua
+                        ampiezza. Infine, Brottor condivise qualche parola sulla sua vita tra le montagne e sulla scelta di diventare mercante.
+                        </p>
+
+                        <p>
+                        Dopo quelle confessioni, il gruppo cadde in un sonno profondo e ristoratore. Tutti tranne Azrael, che si offrì di fare il turno
+                        di guardia. L’elfo vegliava in silenzio quando avvertì una presenza alle sue spalle.
+                        </p>
+
+                        <p>
+                        La sua dea apparve davanti a lui. Colto dalla confusione e dal timore, Azrael si inginocchiò con il volto a terra. Quando, dopo
+                        qualche istante, osò rialzare lo sguardo, vide sei fili dorati che si dipanavano dalla divinità verso i suoi compagni addormentati.
+                        </p>
+
+                        <p>
+                        Prima di svanire, la dea lasciò Azrael con una sola, enigmatica domanda: <em>«Tu di cosa necessiti?»</em>
+                        </p>
+
+                        <p>
+                        L’elfo rimase solo, con più domande di quante ne avesse prima. Poco dopo, l’alba sorse all’orizzonte, annunciando l’inizio di un
+                        nuovo giorno e ricordando al gruppo che il viaggio verso il Dorso del Mondo doveva continuare.
+                        </p>
+                    </div>
+                    <div class="chapter-title">
+                        <h3>Capitolo V: Catene, Inganni e Cime Stellate</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>
+                        Dopo essersi preparati per riprendere il viaggio, gli avventurieri si accinsero finalmente a dirigersi verso il Dorso del Mondo.
+                        Proprio in quell’istante, però, un messaggero raggiunse l’accampamento portando una lettera indirizzata a Brottor. Il sigillo
+                        era inconfondibile: proveniva da Bartolomiao, direttamente da Waterdeep.
+                        </p>
+
+                        <p>
+                        Il messaggio era scritto in tabaxi, la lingua natia del mago, incomprensibile ai più. Brottor lo lesse in silenzio, poi si schiarì
+                        la voce e ne offrì la traduzione:
+                        </p>
+
+                        <p>
+                        “Sono arrivato a Waterdeep. Oggi chiederò udienza al Lord Svelato. Vi chiedo di non partire ancora per il Dorso del Mondo, ma di
+                        attendere il consenso del Lord.<br>
+                        Bartolomiao”
+                        </p>
+
+                        <p>
+                        Dopo una breve discussione, il gruppo decise di rispettare la richiesta del mago. Rimandarono la partenza e si divisero: Azrael,
+                        Barakas, Lyriëa, Lucien e Igor si diressero verso la città per cercare oggetti utili e informazioni, mentre Trogo e Brottor
+                        rimasero all’accampamento per riposare e occuparsi delle provviste.
+                        </p>
+
+                        <p>
+                        Non appena i cinque misero piede in città, furono circondati da quattro uomini armati. Tra loro riconobbero subito l’individuo
+                        che Barakas aveva ammansito la sera precedente. Le minacce si trasformarono rapidamente in violenza e, in una piazza deserta,
+                        mentre le guardie osservavano senza intervenire, scoppiò lo scontro.
+                        </p>
+
+                        <p>
+                        I quattro aggressori ebbero la peggio. Solo allora le guardie, che fino a quel momento avevano assistito scommettendo
+                        sull’esito del combattimento, decisero di intervenire per arrestare i vincitori. Lyriëa, Igor e Lucien, rapidi e agili,
+                        riuscirono a dileguarsi tra i vicoli. Azrael e Barakas, invece, non ebbero la stessa fortuna.
+                        </p>
+
+                        <p>
+                        L’elfo e il tiefling vennero trascinati nella prigione di Luskan, spogliati delle armi e rinchiusi in una cella affiancata da
+                        altre, già occupate da volti stanchi e diffidenti.
+                        </p>
+
+                        <p>
+                        Rimasti soli, i due iniziarono a discutere su come fuggire. Fu Barakas ad attirare l’attenzione della guardia, mentre Azrael
+                        simulò un improvviso malore. La guardia, preoccupata, entrò nella cella e fece condurre l’elfo all’esterno, scortato da altre due
+                        sentinelle.
+                        </p>
+
+                        <p>
+                        Azrael venne portato all’erboristeria della città per essere curato, lasciando Barakas da solo dietro le sbarre.
+                        </p>
+
+                        <p>
+                        Nel frattempo, Lyriëa, Igor e Lucien tornarono verso la prigione per aiutare i compagni. Giunti sul posto, scoprirono che Azrael
+                        era stato trasferito e che Barakas era rimasto l’unico prigioniero. Decisero allora di agire.
+                        </p>
+
+                        <p>
+                        Mentre Barakas tentava invano di distrarre la guardia dall’interno, Lyriëa scassinò una finestra, si introdusse silenziosamente
+                        nella prigione e, con un gesto rapido, strangolò la guardia fino a farla perdere conoscenza. Recuperarono l’equipaggiamento dei
+                        compagni e di alcuni detenuti e liberarono Barakas, fuggendo prima che l’allarme potesse essere dato.
+                        </p>
+
+                        <p>
+                        I fuggitivi raggiunsero l’erboristeria proprio mentre Azrael, con un incantesimo di teletrasporto, riusciva a dileguarsi. Tutti
+                        corsero allora verso un vicolo nascosto per sfuggire alle guardie. Lì Lyriëa liberò Azrael dalle manette, e i due elfi tornarono
+                        di corsa all’accampamento.
+                        </p>
+
+                        <p>
+                        Gli altri ripresero invece la strada principale, dove furono nuovamente fermati dalle guardie. Questa volta, però, l’intenzione
+                        non sembrava essere l’arresto. Dopo che Barakas schivò l’affondo di una lancia e abbatté una guardia, i quattro riuscirono a
+                        seminare gli inseguitori e a ricongiungersi con il resto del gruppo.
+                        </p>
+
+                        <p>
+                        Riuniti all’accampamento, gli avventurieri decisero che era tempo di lasciare Luskan. Presero la via per Mirabar, la città natale
+                        di Brottor. Durante il viaggio, il nano fece loro da guida, raccontando con orgoglio le meraviglie della civiltà nanica e le
+                        ricchezze di Mirabar.
+                        </p>
+
+                        <p>
+                        Giunsero a destinazione a tarda sera e furono accompagnati nella casa di Brottor, dove poterono finalmente riposare al sicuro.
+                        </p>
+
+                        <p>
+                        Il mattino seguente, dopo la colazione, il gruppo tornò a occuparsi dell’enigma lasciato dalla Banda dei Quattro Fratelli.
+                        Questa volta, con calma e concentrazione, riuscirono a decifrare il messaggio, che rivelò il suo significato:
+                        </p>
+
+                        <p>
+                        “Cime stellate,<br>
+                        sferzate da bianche nevi,<br>
+                        urla nel vento”
+                        </p>
+                    </div>
+                    <div class="chapter-title">
+                        <h3>Capitolo VI: Partenza per il Dorso del Mondo</h3>
+                    </div>
+                    <div class="chapter-content">
+                        <p>
+                            Il mattino a Mirabar era freddo e silenzioso quando Brottor lasciò la casa diretto alla stazione di posta. Attese solo pochi istanti prima di ricevere la lettera tanto attesa. Il sigillo di Bartolomiao non lasciava dubbi. Il nano lesse con attenzione, poi chiuse il pugno sulla pergamena. Il permesso era arrivato: la spedizione poteva finalmente iniziare.
+                        </p>
+                        <p>
+                            Riunito il gruppo, i sette avventurieri lasciarono Mirabar e presero la via verso est, dirigendosi al Dorso del Mondo. Le strade battute lasciarono presto spazio a sentieri rocciosi, mentre le montagne si facevano sempre più vicine, incombevano come giganti di pietra e neve.
+                            Fu proprio tra quelle rocce che caddero in un’imboscata. Un branco di orchi, nascosto tra i massi, si avventò su di loro con furia cieca. Lo scontro fu rapido ma intenso; urla e clangore d’armi riecheggiarono tra le pareti montuose finché l’ultimo degli assalitori non cadde al suolo.</p>
+                            <p>Frugando tra i cadaveri, gli avventurieri trovarono una pergamena grezza, scritta in orchesco. Il messaggio era chiaro e inquietante:</p>
+                            <p></p>
+                            <p>
+
+                                “<i>Evacquare l’accampamento e spostarsi a sud. Pericolo nelle vicinanze dell’accampamento a nord.</i>”
+                            </p>
+                            <p>
+                                La scoperta impose cautela. Decisero di non proseguire oltre e di fermarsi a metà strada tra l’accampamento orchesco e l’inizio del sentiero montano. Lì allestirono un campo essenziale, sfruttando le rocce come riparo dal vento.
+                            </p>
+                            <p>
+                                Prima che calasse il buio, Azrael inviò il suo corvo verso nord, affidandogli il compito di perlustrare la zona e scoprire cosa potesse aver spinto gli orchi alla fuga. Solo dopo si concesse di tornare al fuoco.
+                            </p>
+                            <p>
+                                La cena fu semplice ma calda. Seduti attorno alle fiamme, i sette discussero sottovoce del messaggio e delle possibili minacce. Azrael prese infine il suo strumento e suonò una melodia lenta, che si diffuse nell’aria fredda e quietò per un momento le tensioni.
+                            </p>
+                            <p>
+                                Stanchi per la giornata, decisero infine di riposare. Il fuoco si spense lentamente, mentre il Dorso del Mondo vegliava su di loro, immobile e silenzioso, come se attendesse il loro prossimo passo.
+                            </p>
+                            <p>
+                                Sotto le stelle del Dorso del Mondo, la notte calò carica di presagi.
+                            </p>
+                        </div>
+                        <div class="chapter-title">
+                            <h3>Capitolo VII: Il Respiro del Destino</h3>
+                        </div>
+                        <div class="chapter-content">
+                            <p>
+                                All’alba gli avventurieri smontarono il campo e ripresero il cammino verso nord, diretti all’accampamento orchesco abbandonato. Giunti sul posto trovarono segni evidenti di una fuga frettolosa e, frugando tra tende strappate e armi lasciate indietro, scoprirono tracce di pattuglie mandate a perlustrare la montagna… pattuglie che non erano mai tornate.
+                            </p>
+                            <p>
+                                Seguendo quei segni, il gruppo raggiunse una fenditura nella roccia, una spaccatura oscura che si apriva nel fianco della montagna come una ferita. Davanti a quell’ingresso, gli avventurieri si fermarono a discutere: entrare significava rischiare un incontro con il drago bianco, tornare indietro voleva dire rinunciare alla missione.
+                                Fu allora che Azrael si inginocchiò. Pregò la sua dea, e come a Luskan ella gli apparve. Cinque fili dorati si dipanavano dal suo petto verso i compagni, tutti tranne Brottor. Poi Azrael vide la dea avanzare… ed entrare nella fenditura, scomparendo nell’oscurità. Quando la visione svanì, l’elfo si rialzò e prese la decisione: sarebbe entrato. 
+                            </p>
+                            <p>
+                                Gli altri, fidandosi di lui, lo seguirono.
+                            </p>
+                            <p>
+                                All’interno percorsero un lungo corridoio scavato nella roccia, finché giunsero a un ascensore di fattura recente. La piattaforma li condusse nelle profondità, fino a una vasta sala sotterranea dominata da un enorme masso al centro. Proseguirono ancora, immergendosi in una nebbiolina sottile che fece girare la testa a tutti. Tutti avanzarono… tranne Lyriëa, che si fermò per un istante, inquieta, prima di raggiungerli.
+                                Un attimo dopo, il drago apparve. Un soffio gelido li travolse, e tutto si spense. Nel buio assoluto, una voce antica e profonda risuonò:
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <i>"Tornate indietro o questa sarà la vostra fine."</i>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                Si risvegliarono di colpo nel corridoio, esattamente nel punto della nebbiolina. Sconvolti, ma determinati, decisero di avanzare di nuovo.
+                            </p>
+                            <p>
+                                Questa volta, il drago non attaccò. Azrael e Brottor parlarono con la creatura, che consegnò loro due scaglie. Alla domanda di Azrael, il drago rispose con calma che la sua fine era vicina: non avrebbe più combattuto, avrebbe solo atteso la morte.
+                            </p>
+                            <p>
+                                Usciti dalla caverna, trovarono ad attenderli guerrieri armati delle Dieci Frecce, guidati dal padre adottivo di Trogo. L’uomo pretendeva le scaglie per rafforzare il dominio degli umanoidi sulle bestie. Dopo un duro confronto tra padre e figlio, lo scontro esplose. La battaglia fu rapida e feroce. Alla fine, Trogo tagliò le mani al padre e lo lasciò svenuto sulla neve.
+                            </p>
+                            <p>
+                                Tra Trogo e Brottor nacque un acceso litigio sul destino delle scaglie, ma il nano convinse il gruppo a portarle a Waterdeep. Lì il Lord di Waterdeep spiegò che all’Alleanza non interessavano le scaglie, bensì le intenzioni delle Dieci Frecce. Il Lord offrì loro di unirsi all’Alleanza. Tutti accettarono… tranne Trogo, che lasciò la città deciso a inseguire suo padre e fermare le Dieci Frecce.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+        <script src="Campagna.js" defer></script>
+</html>
