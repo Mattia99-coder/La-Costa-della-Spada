@@ -188,18 +188,36 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     z-index: 1000;
     overflow: hidden;
     position: relative;
 }
 
 .scheda-fullscreen .immagine-scheda {
-    height: 90vh;
-    width: 100%;
+    height: 100%;
+    width: 60vh;
     max-width: 100%; 
     object-fit: cover;
     border-radius: 15px;
+}
+
+/* Regola specifica per la mappa della Costa della Spada */
+.scheda-fullscreen .immagine-scheda[alt*="Costa della Spada"] {
+    width: 80vw;
+    height: 90vh;
+}
+
+/* Regole specifiche per Bartolomiao e Drago Bianco - immagini contenute */
+.scheda-fullscreen .immagine-scheda[alt*="Bartolomiao"],
+.scheda-fullscreen .immagine-scheda[alt*="Drago Bianco"] {
+    object-fit: cover;
+    height: 80vh;
+    object-position: center;
+}
+
+.scheda-fullscreen .immagine-scheda[alt*="Drago Bianco"] {
+    object-position: 75% 0%;
 }
 
 .scheda-fullscreen .immagine-scheda-1 {
