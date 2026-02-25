@@ -222,16 +222,37 @@ img {
     object-position: 75% 0%;
 }
 
+.scheda-fullscreen .immagine-scheda[alt*="Elianne Daggerford Scheda"] {
+    width: 60vh;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    z-index: 1003;
+    left: -5%;
+}
+
 .scheda-fullscreen .immagine-scheda-1 {
     position: absolute;
-    height: 60vh;
+    height: 50vh;
     width: 100%;
-    max-width: 100%; 
-    object-fit: contain;
+    max-width: 100%;
+    object-fit: cover;
     border-radius: 15px;
-    z-index: 1002;
+    z-index: 1001;
     right: 35%;
     top: 37%
+}
+
+.scheda-fullscreen .immagine-scheda-1[alt*="Credence Scheda"] {
+    position: absolute;
+    width: 60vh;
+    height: 90vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1002;
+    top: 0;
+    left: 5%;
 }
 
 .close-button {
